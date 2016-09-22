@@ -60,10 +60,11 @@ class Taxi(Car):
 class UnreliableCar(Car):
     reliability = float(45)
 
-    def __init__(self, name="", fuel=0):
+    def __init__(self, name="", fuel=0, distance=""):
         """ initialise a Car instance """
         self.name = name
         self.fuel = fuel
+        self.distance = distance
         self.odometer = 0
 
     def drive(self, distance):

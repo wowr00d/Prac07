@@ -1,7 +1,7 @@
 from Prac07.test_taxi import Taxi, UnreliableCar
 def main():
-    badCar = UnreliableCar("Bad Car", 100)
-    if badCar.drive(distance=30):
+    badCar = UnreliableCar("Bad Car", 100, 130)
+    if badCar.drive(distance=130):
         print("works fine")
     else:
         print("it didnt work")
